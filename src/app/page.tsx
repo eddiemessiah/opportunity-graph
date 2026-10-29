@@ -100,8 +100,8 @@ export default function Board() {
         </select>
       </section>
 
-      <section className="mt-4 grid lg:grid-cols-[1fr_1.15fr] gap-5">
-        <div className="space-y-2">
+      <section className="mt-4 grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] gap-5">
+        <div className="space-y-2 min-w-0">
           {ready && rows.length === 0 && <div className="rounded-xl border border-dashed border-line p-10 text-center text-muted">Board is empty. Paste something above, or load the labelled examples.</div>}
           {rows.map(o => {
             const d = daysLeft(o.deadline);
