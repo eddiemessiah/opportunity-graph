@@ -41,3 +41,4 @@ yarn-error.log*
 next-env.d.ts
 *.png
 SUBMISSION.md
+!.env.example
