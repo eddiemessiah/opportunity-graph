@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@theme inline {
+  --color-ink: #0b0c0a;
+  --color-panel: #131511;
+  --color-line: #262a22;
+  --color-accent: #c6f432;
+  --color-muted: #8b927f;
+  --font-sans: var(--font-geist);
+  --font-serif: var(--font-serif-display);
+  --font-mono: var(--font-geist-mono);
+}
+html, body { background: var(--color-ink); color: #e9ecdf; }
+body { background-image: radial-gradient(60rem 30rem at 85% -10%, rgba(198,244,50,.09), transparent 60%), radial-gradient(40rem 30rem at -10% 10%, rgba(80,140,120,.10), transparent 60%); min-height: 100vh; }
+.grain::after { content:""; position:fixed; inset:0; pointer-events:none; opacity:.05; background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E"); }
